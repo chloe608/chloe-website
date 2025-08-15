@@ -346,7 +346,7 @@ main {
   margin-top: 4rem;
   border-top: 1px solid rgba(255, 255, 255, .06);
   padding: 1.2rem 1rem;
-  background: rgba(255, 255, 255, .02);
+  background: var(--bg-dark); /* Match the page background */
 }
 
 .footer-inner {
@@ -426,4 +426,10 @@ header {
 body.light-mode {
   background: var(--bg-light);
   color: var(--text-light);
+}
+
+/* Footer background for light mode */
+body.light-mode .site-footer {
+  background: var(--bg-light); /* Match light mode background */
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for separation */
 }
