@@ -18,19 +18,15 @@
 
   </head>
   <body>
-    <header class="site-header">
-  <a class="brand" href="index.html">Chloe Lim</a>
-  <nav class="nav" id="site-nav">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <button id="theme-toggle" onclick="toggleTheme()" style="margin-left: 1rem; background: none; border: none; cursor: pointer;">
-      <span class="theme-icon" aria-hidden="true" style="font-size: 24px;">☀️</span>
-    </button>
-  </nav>
-  <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
-</header>
+    <!-- Header inclusion -->
+<div id="header-container"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-container').innerHTML = html;
+    });
+</script>
 
     <main>
       <section class="hero">
@@ -83,19 +79,15 @@
         <p><a class="btn" href="mailto:chloelim608@gmail.com">Email me</a></p>
       </section>
     </main>
-    <footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <strong>Reach out</strong>
-      <p><a class="mono" href="mailto:chloelim608@gmail.com">chloelim608@gmail.com</a> · <a class="mono" href="mailto:chl6@rice.edu">chl6@rice.edu</a></p>
-    </div>
-    <div class="socials">
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:chloelim608@gmail.com">Email</a>
-    </div>
-  </div>
-</footer>
+    <!-- Footer inclusion -->
+<div id="footer-container"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-container').innerHTML = html;
+    });
+</script>
 <script src="assets/js/main.js"></script>
 
   </body>

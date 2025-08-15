@@ -19,6 +19,16 @@
     <title>Experience — Chloe Lim</title>
   </head>
   <body>
+    <!-- Header inclusion -->
+<div id="header-container"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-container').innerHTML = html;
+    });
+</script>
+
     <div class="site-header"></div>
     <main class="page">
       <h1>Experience</h1>
@@ -62,29 +72,16 @@
         </article>
       </section>
     </main>
-    <footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <strong>Reach out</strong>
-      <p><a class="mono" href="mailto:chloelim608@gmail.com">chloelim608@gmail.com</a> · <a class="mono" href="mailto:chl6@rice.edu">chl6@rice.edu</a></p>
-    </div>
-    <div class="socials">
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:chloelim608@gmail.com">Email</a>
-    </div>
-  </div>
-</footer>
-<script src="assets/js/main.js"></script>
+    <!-- Footer inclusion -->
+<div id="footer-container"></div>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector(".site-header").outerHTML = data;
-      });
-  });
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-container').innerHTML = html;
+    });
 </script>
+<script src="assets/js/main.js"></script>
 
   </body>
 </html>
