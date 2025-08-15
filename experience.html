@@ -19,17 +19,7 @@
     <title>Experience — Chloe Lim</title>
   </head>
   <body>
-    <header class="site-header">
-  <a class="brand" href="index.html"><span class="logo-dot"></span> Chloe Lim</a>
-  <nav class="nav" id="site-nav">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-  </nav>
-  <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
-</header>
-
+    <div class="site-header"></div>
     <main class="page">
       <h1>Experience</h1>
       <p class="muted">A quick snapshot of where I’ve worked and what I’ve built. Download a full résumé below.</p>
@@ -86,6 +76,15 @@
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector(".site-header").outerHTML = data;
+      });
+  });
+</script>
 
   </body>
 </html>
