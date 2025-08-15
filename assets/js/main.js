@@ -29,3 +29,11 @@ function toggleTheme() {
     themeToggle.innerHTML = '☀️';
   }
 })();
+
+// Apply consistent icon size
+(function applyIconSize() {
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.style.fontSize = '24px';
+  }
+})();
