@@ -195,6 +195,17 @@ main {
   border: 1px solid rgba(255, 255, 255, .2);
 }
 
+/* Light mode button styles */
+.light-mode .btn {
+  background: #d3d3d3; /* Light gray background */
+  color: #000000; /* Black text */
+}
+
+.light-mode .btn-ghost {
+  background: var(--bg-light); /* Same as main background */
+  color: #000000; /* Black text */
+}
+
 .cards h2 {
   margin-top: 2rem;
 }
@@ -403,7 +414,13 @@ header {
 }
 
 .light-mode .btn {
-  background: var(--brand-light);
+  background: #d3d3d3; /* Light gray background */
+  color: #000000; /* Black text */
+}
+
+.light-mode .btn-ghost {
+  background: var(--bg-light); /* Same as main background */
+  color: #000000; /* Black text */
 }
 
 body.light-mode {
