@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photography — Chloe Lim</title>
+<meta name="description" content="Photography portfolio of Chloe Lim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="/assets/favicon.ico">
+<meta property="og:title" content="Photography — Chloe Lim">
+<meta property="og:description" content="Photography portfolio of Chloe Lim.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/64a6f441149c4078e5aa978f/56b65828-4e91-4001-b8be-5d693fad3d3e/chloe%2Blim%2Bphoto.jpg">
+<meta name="theme-color" content="#0f172a">
+
+  </head>
+  <body>
+    <!-- Header inclusion -->
+<div id="header-container"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-container').innerHTML = html;
+    });
+</script>
+
+    <main>
+      <section class="hero">
+        <h1>Photography</h1>
+        <p>Explore my photography portfolio, including award-winning shots and study-abroad captures.</p>
+        <div class="photo-buttons">
+          <a class="btn" href="https://www.chloelim.me/projects/project-one-ephnc-83kyd" target="_blank" rel="noopener">Stockholm, Sweden</a>
+          <a class="btn btn-ghost" href="https://www.chloelim.me/projects/hobby-photos" target="_blank" rel="noopener">Hobby Photos</a>
+        </div>
+        <div class="photo-section">
+          <img src="https://images.squarespace-cdn.com/content/v1/64a6f441149c4078e5aa978f/5624d187-f24f-4e9c-86b9-3dbf4f8abfac/Coast-Train%2B%2838%29.jpeg" alt="Award-winning photo">
+          <p>psst..see a cool award I got below :)</p>
+          <a class="btn btn-ghost" href="https://news.rice.edu/news/2024/2024-study-abroad-photo-contest-winners-announced" target="_blank" rel="noopener">Click me!</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer inclusion -->
+<div id="footer-container"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-container').innerHTML = html;
+    });
+</script>
+<script src="assets/js/main.js"></script>
+
+  </body>
+</html>
