@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Photography — Chloe Lim</title>
+<title>Photos — Chloe Lim</title>
 <meta name="description" content="Photography portfolio of Chloe Lim.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="/assets/favicon.ico">
-<meta property="og:title" content="Photography — Chloe Lim">
+<meta property="og:title" content="Photos — Chloe Lim">
 <meta property="og:description" content="Photography portfolio of Chloe Lim.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/64a6f441149c4078e5aa978f/56b65828-4e91-4001-b8be-5d693fad3d3e/chloe%2Blim%2Bphoto.jpg">
@@ -28,21 +28,133 @@
     });
 </script>
 
-    <main>
-      <section class="hero">
-        <h1>Photography</h1>
-        <p>Explore my photography portfolio, including award-winning shots and study-abroad captures.</p>
-        <div class="photo-buttons">
-          <a class="btn" href="https://www.chloelim.me/projects/project-one-ephnc-83kyd" target="_blank" rel="noopener">Stockholm, Sweden</a>
-          <a class="btn btn-ghost" href="https://www.chloelim.me/projects/hobby-photos" target="_blank" rel="noopener">Hobby Photos</a>
+    <main class="photos-scroll">
+      <!-- Section 1: Hero (fills viewport) -->
+      <section class="screen screen-hero" id="top">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <img src="/assets/photos/chloe-camera.jpg" alt="Portrait of Chloe with a camera" class="hero-portrait">
+          </div>
+          <div class="hero-right">
+            <h1 class="hero-title">Photography</h1>
+            <p class="hero-bio">I photograph landscapes, travel, and everyday moments with an emphasis on light and story. Here are curated selections from my study abroad and personal work — click any image to enlarge.</p>
+          </div>
         </div>
-        <div class="photo-section">
-          <img src="https://images.squarespace-cdn.com/content/v1/64a6f441149c4078e5aa978f/5624d187-f24f-4e9c-86b9-3dbf4f8abfac/Coast-Train%2B%2838%29.jpeg" alt="Award-winning photo">
-          <p>psst..see a cool award I got below :)</p>
-          <a class="btn btn-ghost" href="https://news.rice.edu/news/2024/2024-study-abroad-photo-contest-winners-announced" target="_blank" rel="noopener">Click me!</a>
+        <div class="scroll-hint">keep scrolling for study abroad photos</div>
+      </section>
+
+      <!-- Section 2: Study abroad photos (projects-like grid) -->
+      <section class="screen screen-grid" id="study-abroad">
+        <div class="section-header"><h2>Study Abroad Photos</h2></div>
+        <div class="project-grid">
+          <a class="project-card" href="#" data-full="/assets/photos/sa1.jpeg">
+            <img src="/assets/photos/sa1.jpeg" alt="Study Abroad 1">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa2.jpeg">
+            <img src="/assets/photos/sa2.jpeg" alt="Study Abroad 2">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa3.jpeg">
+            <img src="/assets/photos/sa3.jpeg" alt="Study Abroad 3">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa4.jpeg">
+            <img src="/assets/photos/sa4.jpeg" alt="Study Abroad 4">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa5.jpeg">
+            <img src="/assets/photos/sa5.jpeg" alt="Study Abroad 5">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa6.jpeg">
+            <img src="/assets/photos/sa6.jpeg" alt="Study Abroad 6">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa7.jpeg">
+            <img src="/assets/photos/sa7.jpeg" alt="Study Abroad 7">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa9.jpeg">
+            <img src="/assets/photos/sa9.jpeg" alt="Study Abroad 8">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa10.jpeg">
+            <img src="/assets/photos/sa10.jpeg" alt="Study Abroad 9">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa12.jpeg">
+            <img src="/assets/photos/sa12.jpeg" alt="Study Abroad 10">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa13.jpeg">
+            <img src="/assets/photos/sa13.jpeg" alt="Study Abroad 11">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa14.jpeg">
+            <img src="/assets/photos/sa14.jpeg" alt="Study Abroad 12">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa15.jpeg">
+            <img src="/assets/photos/sa15.jpeg" alt="Study Abroad 13">
+          </a>
+          <a class="project-card" href="#" data-full="/assets/photos/sa16.jpeg">
+            <img src="/assets/photos/sa16.jpeg" alt="Study Abroad 14">
+          </a>
+        </div>
+        <div class="scroll-hint">keep scrolling for hobby photos</div>
+      </section>
+
+      <!-- Section 3: Hobby photos (same layout) -->
+      <section class="screen screen-grid" id="hobby-photos">
+        <div class="section-header"><h2>Hobby Photos</h2></div>
+        <div class="project-grid">
+          <a class="project-card" href="#" data-full="https://picsum.photos/id/1060/1600/1000">
+            <img src="https://picsum.photos/id/1060/800/600" alt="Hobby 1">
+            <div class="project-caption">Street</div>
+          </a>
+          <a class="project-card" href="#" data-full="https://picsum.photos/id/1070/1600/1000">
+            <img src="https://picsum.photos/id/1070/800/800" alt="Hobby 2">
+            <div class="project-caption">Portrait</div>
+          </a>
+          <a class="project-card" href="#" data-full="https://picsum.photos/id/1080/1600/1000">
+            <img src="https://picsum.photos/id/1080/800/600" alt="Hobby 3">
+            <div class="project-caption">Scenery</div>
+          </a>
+          <a class="project-card wide" href="#" data-full="https://picsum.photos/id/1090/1600/800">
+            <img src="https://picsum.photos/id/1090/1200/600" alt="Hobby 4">
+            <div class="project-caption">Coast</div>
+          </a>
+          <a class="project-card" href="#" data-full="https://picsum.photos/id/1100/1600/1000">
+            <img src="https://picsum.photos/id/1100/800/600" alt="Hobby 5">
+            <div class="project-caption">Night</div>
+          </a>
+          <a class="project-card" href="#" data-full="https://picsum.photos/id/1110/1600/1200">
+            <img src="https://picsum.photos/id/1110/800/800" alt="Hobby 6">
+            <div class="project-caption">Travel</div>
+          </a>
         </div>
       </section>
+
+      <!-- Section 4: Skills (projects example -> skills layout) -->
+      <section class="screen screen-skills" id="skills">
+        <div class="skills-inner">
+          <div class="skills-left">
+            <img src="https://picsum.photos/id/1120/800/500" alt="Skills photo" style="border-radius:12px; width:100%; height:auto;">
+          </div>
+          <div class="skills-right">
+            <h2>Skills</h2>
+            <div class="skills-block">
+              <h3>Tools</h3>
+              <div class="tags"><span class="tag">Adobe Premiere Pro</span><span class="tag">Final Cut Pro</span><span class="tag">After Effects</span></div>
+            </div>
+            <div class="skills-block">
+              <h3>Video-editing skills</h3>
+              <div class="tags"><span class="tag">Sound editing</span><span class="tag">Color correction</span><span class="tag">Multi-camera editing</span></div>
+            </div>
+            <div class="skills-block">
+              <h3>Photographer skills</h3>
+              <div class="tags"><span class="tag">Composition</span><span class="tag">Lighting</span><span class="tag">Drone pilot</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lb-close" aria-label="Close">✕</button>
+      <img class="lb-image" alt="Expanded photo">
+    </div>
 
     <!-- Footer inclusion -->
 <div id="footer-container"></div>
